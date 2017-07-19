@@ -171,6 +171,11 @@ main {
   padding: 20px 0;
 }
 
+.weekly-title {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
 .weekly-cell-wrapper {
   display: flex;
@@ -208,7 +213,6 @@ main {
 }
 
 .weekly-cell-input {
-  /*margin-right: 5px;*/
   padding: 5px;
   text-align: center;
   background-color: #f8e71c;
@@ -221,4 +225,31 @@ main {
   align-items: center;
   width: 50%;
   margin-right: 10px;
+}
+
+.monthly-title {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.monthly {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.circles-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle-div-for-now {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid red;
+  text-align: center;
 }
