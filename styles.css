@@ -2,6 +2,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Avenir Next', sans-serif;
+  margin: 0;
 }
 
 * {
@@ -20,7 +21,8 @@ body {
   font-weight: normal;
 }
 
-h1 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -57,4 +59,96 @@ header {
   background-color: rgba(122, 158, 159, 0.47);
   color: #4F6367;
   border: 1px solid #979797;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 80%;
+}
+
+.calendar {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  border: 1px solid #BDBDBD;
+  background-color: #eef5db;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  border: 1px solid #BDBDBD;
+  text-align: center;
+}
+
+.day-title {
+  height: 40%;
+  padding: 10px 0 0;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 60%;
+}
+
+.icon {
+  width: 45%;
+  height: 45%;
+  border-radius: 50%;
+  background-color: #5b5d59;
+}
+
+.today {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+  background-color: #eef5db;
+}
+
+.today-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 16.67%;
+}
+
+.cell-icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #5b5d59;
+}
+
+.cell-info {
+  display: flex;
+  align-items: center;
+}
+
+.cell-title {
+  margin: 0 10px;
+}
+
+.cell-input {
+  margin-right: 10px;
+  padding: 10px 5px;
+  text-align: center;
+  background-color: #f8e71c;
+  border: none;
 }
